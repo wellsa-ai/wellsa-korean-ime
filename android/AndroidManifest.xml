@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ai.wellsa.koreanime" android:versionCode="4" android:versionName="0.3.1">
+    package="ai.wellsa.koreanime" android:versionCode="5" android:versionName="0.3.2">
     <uses-sdk android:minSdkVersion="34" android:targetSdkVersion="35" />
     <!-- No permissions requested, no network. -->
-    <application android:label="Wellsa Korean IME" android:allowBackup="false" android:debuggable="false">
+    <application android:label="Wellsa Korean IME" android:icon="@mipmap/ic_launcher" android:allowBackup="false" android:debuggable="false">
+        <activity android:name=".MainActivity" android:exported="true" android:label="Wellsa Korean IME"
+                  android:theme="@android:style/Theme.DeviceDefault.DayNight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <service android:name=".TextIme" android:label="Wellsa Korean IME" android:exported="true"
                  android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter><action android:name="android.view.InputMethod" /></intent-filter>

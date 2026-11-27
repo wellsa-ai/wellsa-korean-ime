@@ -24,9 +24,11 @@ KEYSTORE=$PWD/my.jks KS_ALIAS=ime KS_PASS_FILE=/path/to/password.txt android/bui
 ## Install and enable
 
 ```
-adb install android/out/wellsa-korean-ime-0.3.1.apk
+adb install android/out/wellsa-korean-ime-0.3.2.apk
 adb shell ime enable ai.wellsa.koreanime/.TextIme
 ```
+
+Opening the app from the launcher shows a short explanation screen (what it is, the three setup steps, a button to Languages & input settings, the privacy policy and source links). It needs no permissions and no network.
 
 Play Protect may warn about an unknown app; that is expected for a self-built APK.
 

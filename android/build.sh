@@ -11,7 +11,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 SDK=${ANDROID_HOME:-$HOME/Android/Sdk}; BT=$SDK/build-tools/${BUILD_TOOLS:-35.0.0}; PLAT=$SDK/platforms/${PLATFORM:-android-35}/android.jar
-VER=0.3.1
+VER=0.3.2
 rm -rf out && mkdir -p out/classes out/res
 javac -source 8 -target 8 -bootclasspath "$PLAT" -classpath "$PLAT" -Xlint:-options -nowarn -d out/classes $(find src -name '*.java')
 "$BT/d8" --release --min-api 34 --lib "$PLAT" --output out $(find out/classes -name '*.class')
