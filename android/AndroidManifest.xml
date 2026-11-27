@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ai.wellsa.koreanime" android:versionCode="5" android:versionName="0.3.2">
-    <uses-sdk android:minSdkVersion="34" android:targetSdkVersion="35" />
+    package="ai.wellsa.koreanime" android:versionCode="6" android:versionName="0.3.3">
+    <uses-sdk android:minSdkVersion="34" android:targetSdkVersion="36" />
     <!-- No permissions requested, no network. -->
     <application android:label="Wellsa Korean IME" android:icon="@mipmap/ic_launcher" android:allowBackup="false" android:debuggable="false">
         <activity android:name=".MainActivity" android:exported="true" android:label="Wellsa Korean IME"

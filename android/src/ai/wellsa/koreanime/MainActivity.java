@@ -18,7 +18,7 @@ import android.widget.TextView;
  * Text is shown in Korean with English underneath (both always, no locale logic).
  */
 public class MainActivity extends Activity {
-    static final String VERSION = "0.3.2";
+    static final String VERSION = "0.3.3";
     static final String POLICY_URL = "https://wellsa.ai/privacy/korean-ime/";
     static final String SOURCE_URL = "https://github.com/wellsa-ai/wellsa-korean-ime";
     static final String CMD_ENABLE = "adb shell ime enable ai.wellsa.koreanime/.TextIme\n"
@@ -106,7 +106,7 @@ public class MainActivity extends Activity {
         sv.addView(col);
         sv.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
             @Override public android.view.WindowInsets onApplyWindowInsets(View v, android.view.WindowInsets in) {
-                android.graphics.Insets i = in.getInsets(android.view.WindowInsets.Type.systemBars());
+                android.graphics.Insets i = in.getInsets(android.view.WindowInsets.Type.systemBars() | android.view.WindowInsets.Type.displayCutout());
                 v.setPadding(i.left, i.top, i.right, i.bottom);
                 return in;
             }

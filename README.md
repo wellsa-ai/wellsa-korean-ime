@@ -6,7 +6,7 @@ It consists of a tiny keyboard-less input method (an APK with no permissions and
 
 ## Build
 
-Requirements: Android 14 (API 34) or newer on the phone; to build, JDK 17+, Android SDK with `platforms/android-35` and `build-tools/35.0.0`. No Gradle.
+Requirements: Android 14 (API 34) or newer on the phone; to build, JDK 17+, Android SDK with `platforms/android-36` and `build-tools/36.0.0`. No Gradle.
 
 ```
 export ANDROID_HOME=$HOME/Android/Sdk   # macOS Android Studio default: $HOME/Library/Android/sdk
@@ -24,7 +24,7 @@ KEYSTORE=$PWD/my.jks KS_ALIAS=ime KS_PASS_FILE=/path/to/password.txt android/bui
 ## Install and enable
 
 ```
-adb install android/out/wellsa-korean-ime-0.3.2.apk
+adb install android/out/wellsa-korean-ime-0.3.3.apk
 adb shell ime enable ai.wellsa.koreanime/.TextIme
 ```
 
