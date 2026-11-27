@@ -2,6 +2,8 @@
 
 **Android only.** Type any Unicode text, including Korean, into the focused text field of an Android phone over adb. `adb shell input text` cannot do this: it only handles ASCII.
 
+![Demo: adb shell input text types nothing for Korean text, Wellsa Korean IME commits the same sentence into a Chrome text field](docs/demo.gif)
+
 It consists of a tiny keyboard-less input method (an APK with no permissions and no network) and a host-side Python wrapper that switches to it, commits the text, and always switches back to your original keyboard.
 
 ## Build
