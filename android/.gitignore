@@ -1,0 +1,5 @@
+out/
+out-test/
+*.jks
+*.keystore
+*.pass
